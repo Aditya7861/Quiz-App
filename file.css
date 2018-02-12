@@ -1,0 +1,38 @@
+#upper_div {
+    margin: auto;
+    position: relative align-content: center;
+    width: 600px;
+    height: 400px;
+
+
+}
+
+h1 {
+    /*
+    margin-bottom:-50px;
+    margin-left:60px;
+*/
+}
+.answers {
+    margin: 40px;
+    padding: 40px;
+    width: 400px;
+    background-color:;
+    height: 200px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 1px 1px 37px red;
+}
+
+.answers p {
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+.answers button {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+#next {
+    margin-left: 290px;
+}
