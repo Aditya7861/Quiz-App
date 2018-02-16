@@ -25,7 +25,7 @@ function set_question(ques) {
     document.getElementById('third_option').style.display = 'none';
     document.getElementById('fourth_option').style.display = 'none';
 
-    document.getElementById('next').onclick = function () {
+    document.getElementById('next').onclick = function run() {
         document.getElementById('first_option').style.display = 'initial';
         document.getElementById('second_option').style.display = 'initial';
         document.getElementById('third_option').style.display = 'initial';
@@ -50,10 +50,7 @@ function set_question(ques) {
             document.getElementById('next').style.display = 'none';
             document.getElementById('demo').innerHTML = "Quiz Finished YOu score is " + result;
         }
-    }
-
-}
-
+  
 function question_load(id) {
     document.getElementById('first_option').disabled = false;
     document.getElementById('second_option').disabled = false;
@@ -64,43 +61,51 @@ function question_load(id) {
     document.getElementById('second_option').innerHTML = id.second[1];
     document.getElementById('third_option').innerHTML = id.second[2];
     document.getElementById('fourth_option').innerHTML = id.second[3];
+    document.getElementById('next').style.display = 'none';
 
     document.getElementById('first_option').onclick = function () {
         var button_name = document.getElementById('first_option').innerHTML;
         if (!button_name.localeCompare(id.third)) {
             console.log('sucess');
-            document.getElementById('first_option').disabled = true;
+            run();
             result++;
         } else
+            run();
             console.log('fail');
     }
     document.getElementById('second_option').onclick = function () {
         var button_name = document.getElementById('second_option').innerHTML;
         if (!button_name.localeCompare(id.third)) {
             console.log('sucess');
-            document.getElementById('second_option').disabled = true;
+            run();
             result++;
         } else
+            run();
             console.log('fail');
     }
     document.getElementById('third_option').onclick = function () {
         var button_name = document.getElementById('third_option').innerHTML;
         if (!button_name.localeCompare(id.third)) {
-            document.getElementById('third_option').disabled = true;
             console.log('sucess');
+           run();
             result++;
         } else
+        run();
             console.log('fail');
     }
     document.getElementById('fourth_option').onclick = function () {
         var button_name = document.getElementById('fourth_option').innerHTML;
         if (!button_name.localeCompare(id.third)) {
-            document.getElementById('fourth_option').disabled = true;
             console.log('sucess');
             result++;
         } else
+            run();
             console.log('fail');
     }
-    console.log(result)
+    
+
+}
+console.log(result)
+  }
 
 }
