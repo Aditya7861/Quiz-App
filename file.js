@@ -4,10 +4,10 @@ function demo(first, second, third) {
     this.third = third;
 }
 
-var first = new demo("Who invented c", ['Dennis Ritchie', 'Dennis Richard', 'Richard Dennis', 'charles babbage'], 'Dennis Ritchie');
-var second = new demo("In the standard library of C programming language, which of the following header file is designed for basic mathematical operations?", ['math.h', 'maths.h', 'stdio.h', 'conio.h'], 'math.h');
-var third = new demo("A local variable is stored in ___", ['code segment', 'stack segment', 'Heap segment', 'Non of these'], 'stack segment');
-var fourth = new demo("A single line comment in C language source code can begin with _____", ['//', '/*', '$', '*/'], '//');
+var first = new demo("<h3>Who invented c</h3>", ['Dennis Ritchie', 'Dennis Richard', 'Richard Dennis', 'charles babbage'], 'Dennis Ritchie');
+var second = new demo("<h3>In the standard library of C programming language, which of the following header file is designed for basic mathematical operations?</h3>", ['math.h', 'maths.h', 'stdio.h', 'conio.h'], 'math.h');
+var third = new demo("<h3>A local variable is stored in ___</h3>", ['code segment', 'stack segment', 'Heap segment', 'Non of these'], 'stack segment');
+var fourth = new demo(",<h3>A single line comment in C language source code can begin with _____</h3>", ['//', '/*', '$', '*/'], '//');
 
 var qus = [first, second, third, fourth];
 var result = 0;
