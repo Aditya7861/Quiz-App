@@ -1,38 +1,14 @@
-#upper_div {
-    margin: auto;
-    position: relative align-content: center;
-    width: 600px;
-    height: 400px;
 
-
-}
-
-h1 {
-    /*
-    margin-bottom:-50px;
-    margin-left:60px;
-*/
-}
-.answers {
-    margin: 40px;
-    padding: 40px;
-    width: 400px;
-    background-color:;
-    height: 200px;
-    float: left;
-    border-radius: 10px;
-    box-shadow: 1px 1px 37px red;
-}
-
-.answers p {
-    margin-bottom: -30px;
+div.center
+{
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+body{
+    background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.answers button {
-    margin-left: 40px;
-    margin-top: 50px;
-}
-#next {
-    margin-left: 290px;
+
 }
